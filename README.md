@@ -49,8 +49,25 @@ actionDamaged.play();
 
 Note that the function you pass to the action is scoped to the instance creating it - we're accessing the Action itself through our function's first argument.
 
+**Check out the repo's example project for more like this.**
+
 # Functions
-### execute( )
+
+## Action( ) constructor
+
+Actions starts with the `Action()` constructor.
+
+You can access the struct within your action function with its **first argument** (in this example, we've called it  `a`).
+
+```
+myAction = new Action( function( a ) ) {
+    // do stuff
+}
+```
+
+## Methods
+
+## execute( )
 
 **Description**: Executes the Action, starting the time source.
 
@@ -58,7 +75,7 @@ Note that the function you pass to the action is scoped to the instance creating
 
 ---
 
-### bind( ) 
+## bind( ) 
 
 **Description**: Rebinds the method passed to the Action - by default, it's bound to the instance creating the Action.
 
@@ -66,7 +83,7 @@ Note that the function you pass to the action is scoped to the instance creating
 
 ---
 
-### play( ) 
+## play( ) 
 
 **Description**: Executes the Action, starting the time source.
 
@@ -75,7 +92,7 @@ Note that the function you pass to the action is scoped to the instance creating
 
 ---
 
-### reset( ) 
+## reset( ) 
 
 Resets the action's timer.
 
@@ -83,7 +100,7 @@ Resets the action's timer.
 
 ---
 
-### pause( ) 
+## pause( ) 
 
 Pauses the action.
 
@@ -91,7 +108,7 @@ Pauses the action.
 
 ---
 
-### pause( ) 
+## pause( ) 
 
 Pauses the action.
 
@@ -99,7 +116,7 @@ Pauses the action.
 
 ---
 
-### pause( ) 
+## pause( ) 
 
 Stops the action, resetting its timer.
 
@@ -107,7 +124,7 @@ Stops the action, resetting its timer.
 
 ---
 
-### lock( ) 
+## lock( ) 
 
 Prevents the action from playing again - this does NOT stop a playing action.
 
@@ -115,7 +132,7 @@ Prevents the action from playing again - this does NOT stop a playing action.
 
 ---
 
-### unlock( ) 
+## unlock( ) 
 
 Allows the action to play again if it was locked.
 
@@ -123,7 +140,7 @@ Allows the action to play again if it was locked.
 
 ---
 
-### started( ) 
+## started( ) 
 
 Returns true if the action's timer is at 0.
 
@@ -131,7 +148,7 @@ Returns true if the action's timer is at 0.
 
 ---
 
-### reps( ) 
+## reps( ) 
 
 The number of reps the Action has gone through.
 
@@ -139,7 +156,7 @@ The number of reps the Action has gone through.
 
 ---
 
-### started( t ) 
+## started( t ) 
 
 Returns true if the action's timer is at t.
 
@@ -147,7 +164,7 @@ Returns true if the action's timer is at t.
 
 ---
 
-### every( t, duration ) 
+## every( t, duration ) 
 
 Returns true every t steps, for duration steps.
 
@@ -155,7 +172,7 @@ Returns true every t steps, for duration steps.
 
 ---
 
-### at_each_of( args... ) 
+## at_each_of( args... ) 
 
 Returns true if the action's timer is equal to any of the arguments.
 
@@ -163,7 +180,7 @@ Returns true if the action's timer is equal to any of the arguments.
 
 ---
 
-### before( t ) 
+## before( t ) 
 
 Returns true if the action's timer is before t.
 
@@ -171,7 +188,7 @@ Returns true if the action's timer is before t.
 
 ---
 
-### between( s,e ) 
+## between( s,e ) 
 
 Returns true if the action's timer is between s and e.
 
@@ -179,7 +196,7 @@ Returns true if the action's timer is between s and e.
 
 ---
 
-### between( t ) 
+## between( t ) 
 
 Returns true if the action's timer is after t.
 
@@ -187,7 +204,7 @@ Returns true if the action's timer is after t.
 
 ---
 
-### isPlaying() 
+## isPlaying() 
 
 Returns true if the action is playing, or false if it's paused or stopped.
 
@@ -195,7 +212,7 @@ Returns true if the action is playing, or false if it's paused or stopped.
 
 ---
 
-### isPaused() 
+## isPaused() 
 
 Returns true if the action is paused, or false if it's playing or hasn't run yet.
 
@@ -203,7 +220,7 @@ Returns true if the action is paused, or false if it's playing or hasn't run yet
 
 ---
 
-### isStopped() 
+## isStopped() 
 
 Returns true if the action is stopped, or hasn't run yet.
 
@@ -211,7 +228,7 @@ Returns true if the action is stopped, or hasn't run yet.
 
 ---
 
-### hasTimeSource() 
+## hasTimeSource() 
 
 Returns true if the action has a time source attached (it has run at least once).
 
@@ -219,7 +236,7 @@ Returns true if the action has a time source attached (it has run at least once)
 
 ---
 
-### getRuns() 
+## getRuns() 
 
 Returns the number of times this action has been played.
 
