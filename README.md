@@ -1,6 +1,8 @@
 # Actions
 A library for self-contained, time-aware action functions in your Gamemaker instances.
 
+See the example project, or the read below for more information on how to use it.
+
 # Features
 
 * Self-contained, time-aware action loops for instances - create modular behaviours or animations easily.
