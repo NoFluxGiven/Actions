@@ -87,8 +87,7 @@ myAction = new Action( function( a ) ) {
 
 ## play( ) 
 
-**Description**: Executes the Action, starting the time source.
-
+**Description**: Executes the Action, starting the time source - an alias for `execute()`.
 
 **Returns:** `{Struct.Action}`
 
@@ -110,15 +109,7 @@ Pauses the action.
 
 ---
 
-## pause( ) 
-
-Pauses the action.
-
-**Returns:** `{Struct.Action}`
-
----
-
-## pause( ) 
+## stop( ) 
 
 Stops the action, resetting its timer.
 
@@ -147,14 +138,6 @@ Allows the action to play again if it was locked.
 Returns true if the action's timer is at 0.
 
 **Returns:** `{bool}`
-
----
-
-## reps( ) 
-
-The number of reps the Action has gone through.
-
-**Returns:** {real}
 
 ---
 
@@ -198,7 +181,7 @@ Returns true if the action's timer is between s and e.
 
 ---
 
-## between( t ) 
+## after( t ) 
 
 Returns true if the action's timer is after t.
 
