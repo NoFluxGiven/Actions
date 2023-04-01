@@ -1,0 +1,39 @@
+{
+  "resourceType": "GMProject",
+  "resourceVersion": "1.7",
+  "name": "Actions",
+  "AudioGroups": [
+    {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
+  ],
+  "configs": {
+    "children": [],
+    "name": "Default",
+  },
+  "defaultScriptType": 1,
+  "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GM2023","folderPath":"folders/Libraries/Actions/GM2023.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Libraries","folderPath":"folders/Libraries.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GMS","folderPath":"folders/Libraries/Actions/GMS.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Actions","folderPath":"folders/Libraries/Actions.yy",},
+  ],
+  "IncludedFiles": [],
+  "isEcma": false,
+  "LibraryEmitters": [],
+  "MetaData": {
+    "IDEVersion": "2023.2.1.75",
+  },
+  "resources": [
+    {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
+    {"id":{"name":"mngActions","path":"objects/mngActions/mngActions.yy",},},
+    {"id":{"name":"objTongue","path":"objects/objTongue/objTongue.yy",},},
+    {"id":{"name":"ActionsLibGMS2_3","path":"scripts/ActionsLibGMS2_3/ActionsLibGMS2_3.yy",},},
+    {"id":{"name":"sprTongue","path":"sprites/sprTongue/sprTongue.yy",},},
+    {"id":{"name":"ActionsLib","path":"scripts/ActionsLib/ActionsLib.yy",},},
+  ],
+  "RoomOrderNodes": [
+    {"roomId":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
+  ],
+  "TextureGroups": [
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
+  ],
+}

@@ -1,0 +1,12 @@
+{
+  "FolderOrderSettings": [
+    {"name":"Libraries","order":2,"path":"folders/Libraries.yy",},
+    {"name":"GMS","order":2,"path":"folders/Libraries/Actions/GMS.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"rmTest","order":3,"path":"rooms/rmTest/rmTest.yy",},
+    {"name":"mngActions","order":1,"path":"objects/mngActions/mngActions.yy",},
+    {"name":"objTongue","order":4,"path":"objects/objTongue/objTongue.yy",},
+    {"name":"sprTongue","order":5,"path":"sprites/sprTongue/sprTongue.yy",},
+  ],
+}
