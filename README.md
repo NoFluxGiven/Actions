@@ -141,7 +141,7 @@ Returns true if the action's timer is at 0.
 
 ---
 
-## started( t ) 
+## at( t ) 
 
 Returns true if the action's timer is at t.
 
@@ -151,15 +151,17 @@ Returns true if the action's timer is at t.
 
 ## every( t, duration ) 
 
-Returns true every t steps, for duration steps.
+Returns true every t frames, for duration frames.
 
 **Returns:** `{bool}`
 
 ---
 
-## at_each_of( args... ) 
+## steps( args... )
 
 Returns true if the action's timer is equal to any of the arguments.
+
+Note: this will be renamed to "atTimes( args... )" in the next version.
 
 **Returns:** `{bool}`
 
