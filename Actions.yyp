@@ -11,16 +11,16 @@
   },
   "defaultScriptType": 1,
   "Folders": [
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GM2023","folderPath":"folders/Libraries/Actions/GM2023.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Libraries","folderPath":"folders/Libraries.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GMS","folderPath":"folders/Libraries/Actions/GMS.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Actions","folderPath":"folders/Libraries/Actions.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GM2023","folderPath":"folders/Libraries/Actions/GM2023.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GMS","folderPath":"folders/Libraries/Actions/GMS.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.1.75",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
@@ -33,6 +33,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

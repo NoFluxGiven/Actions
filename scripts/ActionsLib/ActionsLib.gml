@@ -1,5 +1,5 @@
 ///@desc
-function Action( func, interval=1 ) constructor {
+function Action( func, duration=-1, interval=1 ) constructor {
 	self.interval = interval
 	self.func = func;
 	self.ts = undefined;
@@ -7,7 +7,7 @@ function Action( func, interval=1 ) constructor {
 	self.playing = false;
 	self.runs = 0;
 	self.locked = false;
-	
+	self.duration = duration;
 	
 	/**
 	 * execute( ) Executes the Action, starting the time source.
@@ -188,6 +188,39 @@ function Action( func, interval=1 ) constructor {
 	 */
 	function after(t) {
 		return time_source_get_reps_completed( self.ts ) > t;
+	}
+	
+	/**
+	 * getDuration( ) Returns the given duration of the Action.
+	 * @returns {real}
+	 */
+	function getDuration( ) {
+		return self.duration;
+	}
+	
+	/**
+	 * setDuration( t ) Sets the Action's duration, which is used by our duration...() functions.
+	 * @returns {Struct.Action}
+	 */
+	function setDuration( t ) {
+		self.duration = t;
+		return self;
+	}
+	
+	/**
+	 * durationFinished( ) Returns true if we have exceeded our duration.
+	 * @returns {bool}
+	 */
+	function durationFinished( ) {
+		return self.duration < 0 ? false : self.time > self.duration;
+	}
+	
+	/**
+	 * durationPercent( ) Returns the percentage of our duration elapsed as a float between 0 and 1.
+	 * @returns {real}
+	 */
+	function durationPercent( ) {
+		return self.duration < 0 ? 0 : self.time / self.duration;
 	}
 	
 	/**
